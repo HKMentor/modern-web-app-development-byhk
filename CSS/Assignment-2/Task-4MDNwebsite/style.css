@@ -24,13 +24,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 0 20px;
     height: 70px;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #b9b9b9;
     position: fixed;       
-   
+
     width: 100%;           
     z-index: 1000; 
 
@@ -136,20 +135,25 @@ padding:  0 10px;
 .hero-div{
     background-color: #ffffff;
     display: flex;
-    margin-top:  100px;
+    margin-top: 100px;
 
 
 }
 .left-div{
     width: 25%;
     height: 100%;
+    padding: 0 20px;
 }
 .center-div{
     width: 55%;
     height: 100%;
+    padding: 0 20px;
+
 
 }
 .right-div{
     width: 20%;
  height: 100%;
+ padding: 0 20px;
+
 }

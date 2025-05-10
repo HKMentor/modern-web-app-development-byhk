@@ -266,3 +266,70 @@ position: relative;
     box-shadow: 0 0 14px rgba(239, 132, 55, 0.8);
     transform: translate(-50%, -50%);
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .big-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .container1,
+    .container3 {
+        width: 80%;
+        height: 200px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .container2 {
+        width: 90%;
+        height: auto;
+        margin-top: 40px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .container2-content h1 {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    .container2-content p {
+        font-size: 1em;
+        margin: 10px;
+        margin-right: 0;
+    }
+
+    .con2-beta {
+        position: static;
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .con2-beta p {
+        font-size: 1em;
+        padding: 10px;
+        margin-top: 2em;
+    }
+
+    .con2-child1,
+    .con2-child2,
+    .con2-child3,
+    .con2-child4,
+    .con2-child5,
+    .con2-child6,
+    .con2-child7,
+    .con2-child8,
+    .con2-child9,
+    .con2-child10 {
+        display: none; /* Optional: Hide extra design circles on small screens */
+    }
+}
