@@ -1,0 +1,104 @@
+/* For screen width 1000px or less */
+
+.top-nav {
+  font-size: 16px;
+  height: 40px;
+}
+
+nav {
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+nav ul li a {
+  font-size: 16px;
+}
+
+.login {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.hero-div {
+  flex-direction: column;
+  margin-top: 8em;
+  padding: 10px;
+}
+
+.left-div {
+  width: 100%;
+  height: auto;
+  position: static;
+  border-right: none;
+  overflow-y: visible;
+}
+
+.center-div {
+  width: 100%;
+  margin: 0;
+}
+
+.footer-div {
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.footerlogo h1 {
+  font-size: 1.3em;
+}
+
+.footerlink1,
+.footerlink2,
+.footerlink3,
+.footerlink4,
+.footerlink5 {
+  font-size: 16px;
+  align-items: center;
+}
+
+.icon ul {
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo2 img {
+  width: 40%;
+  margin-top: 0;
+}
+
+.uli ul {
+  flex-direction: column;
+  margin: 0;
+  gap: 10px;
+}
+
+.search_bar input {
+  width: 70%;
+}
+
+.boxdiv {
+  width: 95%;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.boxdiv h2 {
+  font-size: 1.5em;
+}
+
+.center-div h1 {
+  font-size: 2em;
+}
+
+.center-div h2 {
+  font-size: 1.5em;
+}
