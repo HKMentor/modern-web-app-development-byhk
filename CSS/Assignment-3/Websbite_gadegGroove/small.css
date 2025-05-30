@@ -14,6 +14,7 @@ h2{
   display: block;
   margin-left: auto;
   margin-top: -25px;
+  margin-right: 25px;
 }
 
 nav {
@@ -41,9 +42,9 @@ nav ul li a {
 /* small.css */
 
 /* Hero section for mobile */
-.backgroudimg{
+.backgroundimg{
     background-image: url(./images/bg.jpg);
-    height: 150vh;
+    height: 100vh;
     background-size: cover;
 
 }
@@ -72,12 +73,8 @@ button {
 /* Right image mobile */
 .rightimg {
   margin: 0;
-
+  display: none;
   justify-content: center;
-}
-
-.rightimg img {
-  width: 230px;
 }
 
 /* Section 1 mobile */
@@ -151,11 +148,7 @@ padding-right: 70px;
 }
 
 
-.mainhead3 p {
-  font-size: 12px;
-    color: #a4a0a0;
-  line-height: 1.6;
-}
+
 /* section about 4 */
 .main4{
     background-color: #f9f9f9;
@@ -185,62 +178,51 @@ padding-right: 70px;
 /* section fact 3 */
 .mainhead3 p {
   font-size: 1.2em;
-    color: #232323;
+  color: #232323;
   line-height: 1.2;
-  /* padding-left: 100px; */
-  margin-left: -120px;
-
 }
+/* 
 /* section8 contact */
-.bgcover2{
-margin-bottom: 20em;
-}
-.leftdiv, .rightdiv {
-  width: 100%;
+
+.maindiv8 {
+  flex-direction: column;
   padding: 20px;
 }
 
-.leftdiv h4, .rightdiv h4 {
-  font-size: 1.2em;
-}
-
-.rightdiv .para {
-  font-size: 13px;
-  line-height: 16px;
-  margin-bottom: 20px;
-}
-
-.rightdiv p {
-  font-size: 14px;
-  line-height: 2em;
-}
-
-.leftdiv input {
-  padding: 12px;
-  font-size: 13px;
-}
-.leftdiv, .rightdiv {
+.leftdiv8,
+.rightdiv8 {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
   text-align: center;
   align-items: center;
 }
-.leftdiv input {
-  text-align: center;
-}
-.bgcover2{
-    background-image: url(./images/bechbg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
 
+.leftdiv8 input {
+  padding: 15px;
+  font-size: 14px;
+  width: 90%;
 }
-/* footer */
+
+.rightdiv8 h4 {
+  font-size: 1.4em;
+}
+
+.rightdiv8 .para,
+.rightdiv8 p {
+  font-size: 13px;
+  line-height: 1.6em;
+}
+
+/* FOOTER */
+footer {
+  padding: 350px 20px 20px 20px ;
+  
+}
+
 .footer-content {
-    margin-top: 3em;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 10px;
   gap: 20px;
   text-align: center;
 }
@@ -250,20 +232,15 @@ margin-bottom: 20em;
 }
 
 .linksect1 h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .linksect1 ul li {
-  margin: 5px 0;
-}
-
-.linksect1 ul li a {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .footer-bootom {
-  font-size: 12px;
-  text-align: center;
-  padding: 10px;
+  font-size: 14px;
+  padding: 15px;
 }
+

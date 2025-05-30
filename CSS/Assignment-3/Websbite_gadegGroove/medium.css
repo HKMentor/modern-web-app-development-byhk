@@ -77,31 +77,25 @@ nav ul {
 .rightimg2 .img img {
   max-width: 400px;
 }
-/* section8 */
-.maindiv {
+/* Section 8 - Contact Page Responsive for medium screens */
+/* .maindiv8 {
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 30px;
+  gap: 30px;
 }
 
-.leftdiv, .rightdiv {
+.leftdiv8,
+.rightdiv8 {
   width: 80%;
   height: auto;
-  margin-bottom: 20px;
 }
 
-.leftdiv input {
-  padding: 15px;
-  font-size: 14px;
+.leftdiv8 {
+  line-height: 4em;
 }
-.leftdiv, .rightdiv {
-  text-align: center;
-  align-items: center;
-}
-.leftdiv input {
-  text-align: center;
-}
+
 /* footer */
-.footer-content {
+/* .footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -119,4 +113,41 @@ nav ul {
 
 .linksect1 ul li a {
   font-size: 14px;
+} */ 
+
+
+
+
+/* SECTION 8 - CONTACT */
+.maindiv8 {
+  flex-direction: column;
+  padding: 30px 20px;
+  align-items: stretch;
 }
+
+.leftdiv8,
+.rightdiv8 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.leftdiv input {
+  width: 90%;
+}
+
+/* FOOTER */
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.linksect1 {
+  width: 100%;
+}
+
+
+

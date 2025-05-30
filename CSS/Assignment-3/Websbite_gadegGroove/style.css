@@ -4,7 +4,7 @@
   --dark-bg: #0d0d0d;       /* Deep black background */
   --accent-color: #ffcc00;  /* Golden accent */
   --text-light: #ffffff;
-  --font-main: 'Poppins', sans-serif;
+--font-main: 'Poppins', sans-serif;
 }
 
 *{
@@ -12,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: var(--font-main);
     cursor: pointer;
 
 }
@@ -25,16 +25,14 @@ body {
 
 }
 
-body::before {
-  content: "";
+.bg-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(171, 171, 171, 0.25); /* Adjust for more/less light */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(171, 171, 171, 0.25);
   z-index: -1;
 }
+
 
 
 .main{
@@ -51,7 +49,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 60px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -262,11 +260,6 @@ button:hover{
   margin-bottom: 5px;
 }
 
-.leftContent p {
-  font-size: 12px;
-  color: #a4a0a0;
-  line-height: 1.6;
-}
 
 /* Right Image */
 .leftimg {
@@ -281,7 +274,7 @@ button:hover{
   max-width: 100%;
   width: 800px;
   height: auto;
-  animation: floatUpDown 3s ease-in-out infinite;
+  animation: floatUpDown 0.3s ease-in-out infinite;
 }
 
 /* Optional animation reused from earlier */
@@ -449,8 +442,9 @@ button:hover{
 
 .fact-title {
   font-size: 26px;
-  color:var(--text-light);
+  color: var(--text-light);
 }
+
 /* section4  about hk*/
 .main4{
     background-color: #f9f9f9;
@@ -609,67 +603,59 @@ button:hover{
     font-weight: bold;
     color: var(--primary-color);
 }
-
-/* Container of the gallery */
 .gallery-cont{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
 }
 
-/* Shape and border for each image box */
 .pic-box{
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     width: 200px;
     height: 200px;
     transform: rotate(45deg);
     border: 5px solid black;
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 3px gray;
     position: relative;
     overflow: hidden;
-    transition: transform 0.4s ease-in-out;
+        filter: brightness(40%) contrast(90%);
+        transition: transform 0.4s ease-in-out;
+
 }
 
-/* Zoom effect on box */
-.pic-box:hover {
-    transform: scale(1.15) rotate(45deg);
+.pic-box:hover{
+transform: scale(1.2) rotate(45deg);
+    filter: brightness(110%) contrast(105%) saturate(120%);
+
 }
 
-/* Image style */
 .gallery-cont img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     transform: rotate(-45deg);
-    filter: brightness(40%) contrast(90%);
-    transition: all 0.4s ease-in-out;
-}
-
-/* Hover effect on image */
-.pic-box:hover img {
-    transform: scale(1.2) rotate(-45deg);
-    filter: brightness(110%) contrast(105%) saturate(120%);
-}
+    transition:  all 0.3s ease-in-out;
+}  
 
 /* section 8 contact */
-.bgcover2{
+.bgcover8{
     background-image: url(./images/bechbg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
 
 }
-.maindiv{
+.maindiv8{
     display: flex;
     justify-content: center;
     align-items: center;
     padding:50px ;
     
 }
-.leftdiv{
+.leftdiv8{
     width: 35%;
     background-color: #050505;
     padding: 20px 30px;
@@ -677,14 +663,14 @@ button:hover{
     display: flex;
     flex-direction: column;
     text-align: left;
-    line-height: 8em;
+    line-height: 1em;
 }
-.leftdiv h4{
+.leftdiv8 h4{
     font-size: 1.5em;
     color: #f9f3f3;
     
 }
-.leftdiv input{
+.leftdiv8 input{
     width: 100%;
     padding: 20px;
     line-height: 20px;
@@ -694,7 +680,7 @@ button:hover{
     font-size:15px;
     border-bottom: 1px solid #fdf9f9;
 }
-.rightdiv{
+.rightdiv8{
      width: 35%;
     background-color: #fdf9f9;
     padding: 30px;
@@ -705,30 +691,29 @@ button:hover{
     /* line-height: 2em; */
 }
 
-.rightdiv h4{
+.rightdiv8 h4{
      font-size: 1.8em;
     color: var(--dark-bg);
     margin-bottom: 10px;
 
 }
-.rightdiv .para{
+.rightdiv8 .para{
     font-size: 14px;
     color: #928e8e;
     margin-bottom: 30px;
     line-height: 18px;
 }
-.rightdiv p{
+.rightdiv8 p{
     font-size: 16px;
     color: #3a3a3a;
     line-height: 3em;
 }
-.rightdiv p span{
+.rightdiv8 p span{
     color: var(--primary-color);
     font-size: 12px;
 }
 
 /* footer */
-/* ===== FOOTER SECTION ===== */
 footer {
   background-color: #111;
   color:  #f9f9f9;
@@ -795,18 +780,7 @@ footer {
   letter-spacing: 1px;
 }
 
-/* ===== RESPONSIVE STYLING ===== */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .linksect1 {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
 .linksect1 ul li a {
   text-decoration: none;
   color: #f9f9f9;
@@ -822,7 +796,6 @@ footer {
   transform: translateX(5px); /* Slide to the right */
 }
 
-/* Optional: Add underline animation effect */
 .linksect1 ul li a::after {
   content: "";
   position: absolute;
@@ -837,3 +810,51 @@ footer {
 .linksect1 ul li a:hover::after {
   width: 100%;
 }
+
+
+/* @media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .linksect1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+} */
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-bg);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 1em;
+  }
+
+  #navbar.show ul {
+    display: flex;
+  }
+} */
