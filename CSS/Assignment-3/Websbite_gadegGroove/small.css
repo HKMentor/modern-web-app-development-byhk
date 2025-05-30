@@ -192,6 +192,9 @@ padding-right: 70px;
 
 }
 /* section8 contact */
+.bgcover2{
+margin-bottom: 20em;
+}
 .leftdiv, .rightdiv {
   width: 100%;
   padding: 20px;
@@ -233,6 +236,7 @@ padding-right: 70px;
 }
 /* footer */
 .footer-content {
+    margin-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
