@@ -1,0 +1,473 @@
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20px;
+    height: auto;
+  }
+
+  header h3 {
+    font-size: 1.2em;
+    margin-left: -2em;
+  }
+
+  .menu-icon {
+    display: block;
+    color: black;
+  }
+
+  nav {
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none; 
+    
+  }
+
+  #navbar.show {
+    display: flex;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    padding-left: 0;
+    width: 100%;
+    line-height: 1.4em;
+  }
+
+  .btnn {
+ display: none;
+  }
+
+
+/* hero */
+.mainhero {
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftdivhero {
+  margin: 50px 10px;
+}
+
+.leftdivhero h2 {
+  font-size: 1.5em;
+}
+
+.leftdivhero p {
+  width: 100%;
+  font-size: 0.95em;
+}
+
+.btnn {
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnn input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.image1 {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background-size: contain;
+}
+
+.rightimg2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rightimg2 img {
+  width: 90px;
+}
+
+.instahero img {
+  margin-top: 30px;
+  width: 90%;
+}
+
+.divimgctn {
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+  gap: 5px;
+}
+
+.herobotomimg {
+  flex-direction: column;
+  gap: 10px;
+}
+/* section 1 */
+.widgetmaindiv {
+  flex-direction: column;
+  margin: 40px 10px;
+  gap: 15px;
+}
+
+.leftwidgimg {
+  width: 100%;
+  max-width: 100%;
+}
+
+.rightwidgctn {
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  line-height: 1.4em;
+  padding: 0 10px;
+}
+
+.rightwidgctn h3 {
+  font-size: 1.4em;
+  margin: 15px 0;
+}
+
+.widgli p {
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #7a7878;
+}
+
+.widgli .impP {
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
+
+/* Section 2 */
+.sec2maindiv {
+  padding: 40px 10px;
+}
+
+.sec2maindiv h2 {
+  font-size: 1.4rem;
+}
+
+.sec2maindiv p {
+  max-width: 100%;
+  font-size: 0.75rem;
+  margin-bottom: 25px;
+}
+
+.cardsec2 {
+  gap: 15px;
+}
+
+.card1sec2 {
+  width: 140px;
+  padding: 10px;
+}
+
+.card1sec2 img {
+  width: 40px;
+  height: 40px;
+}
+
+.card1sec2 h4 {
+  font-size: 0.9rem;
+}
+
+.card1sec2 p {
+  font-size: 0.8rem;
+}
+
+/* Section 3 */
+.sec3maindiv {
+  padding: 40px 10px;
+}
+
+.sec3maindiv h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.sec3div {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.secdiv1 {
+  margin: 10px auto;
+  width: 95%;
+  padding: 12px;
+}
+
+.secdiv1 h4 {
+  font-size: 1rem;
+}
+
+.sect3btmdiv {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.sect3btmdiv p {
+  font-size: 0.85rem;
+}
+
+.sec3img {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+ .sec4maindiv h2 {
+    font-size: 1.5rem;
+  }
+
+  .sec4maindiv p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .sec4card1, .sec4card2 {
+    width: 90%;
+  }
+
+  .btn a {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+/* section 6 */
+/* small.css */
+
+.sec6maindiv {
+  padding: 30px 10px;
+}
+
+.divsec6 {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sec6button {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec6btn1, .sec6btn2 {
+  width: 90%;
+  padding: 10px;
+}
+
+.sec6divbgchild {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  padding: 20px;
+}
+
+.sec6divbg {
+  padding: 40px;
+}
+
+.sec6divbgchild iframe {
+  height: 130px;
+}
+
+.sec6ctn h3 {
+  font-size: 1.4rem;
+}
+
+.sec6ctn p {
+  font-size: 0.9rem;
+}
+
+.btncutomize a {
+  width: 130px;
+  height: 28px;
+  font-size: 0.85rem;
+}
+
+.cardbtm {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sec6btm2 {
+  font-size: 14px;
+  padding: 20px;
+}
+.mainhero {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .leftdivhero {
+    margin: 40px 0 10px 0;
+    text-align: center;
+  }
+
+  .leftdivhero h2 {
+    font-size: 1.8em;
+    line-height: 1.3em;
+  }
+
+  .leftdivhero p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .btn {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  .btnn input {
+    display: none;
+  }
+.btnn  .inputbtnn{
+    margin-left: -20px;
+    border-radius: 0;
+}
+  .ulhero {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .rightdivhero {
+    margin: 20px 0;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .boxtophero {
+    justify-content: center;
+  }
+
+  .topPicHero {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .imageRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image1 {
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .divimgctn {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .rightimg2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .rightimg2 img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .instahero img {
+    margin: 50px 0 0 0;
+    width: 90%;
+  }
+
+  .herobotomimg {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* WIDGET SECTION */
+  .widgetmaindiv {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    gap: 30px;
+  }
+
+  .leftwidgimg {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .rightwidgctn {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rightwidgctn h3 {
+    font-size: 1.8em;
+    line-height: 1.4em;
+  }
+
+  .widgli p {
+    font-size: 18px;
+    line-height: 1.8em;
+  }
+
+  /* section 7 */
+
+
+  /* Section 8 Responsiveness */
+.sec8maindiv {
+  padding: 30px 15px;
+}
+
+.sec8maindiv h2 {
+  font-size: 1.8em;
+}
+
+.sec8divcontainer {
+  grid-template-columns: 1fr;
+  padding: 0 10px;
+}
+
+.sec8divcard1 {
+  padding: 10px;
+}
+
+/* Section 9 Responsiveness */
+.sec9maindiv {
+  padding: 30px 20px;
+}
+
+.sec9right h2 {
+  font-size: 1.8em;
+}
+
+.sec9right h4 {
+  font-size: 1.4em;
+}
+
+.sec9right p {
+  font-size: 13px;
+}
+
+.sec9light iframe {
+  width: 100%;
+  height: auto;
+}
+  .sec13divmain {
+    padding: 30px 15px;
+  }
+
+  .sec13divmain img {
+    width: 100%;
+  }

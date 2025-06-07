@@ -1,0 +1,191 @@
+nav ul {
+  gap: 40px;
+  font-size: 1em;
+  padding-right: 1.5em;
+}
+
+.leftdivhero h2 {
+  font-size: 1.8em;
+}
+
+.leftdivhero p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+.btn input {
+  width: 200px;
+  font-size: 0.9em;
+}
+
+.image1 {
+  height: 250px;
+  background-size: cover;
+}
+
+.rightimg2 img {
+  width: 100px;
+}
+/* sectiomn */
+.rightwidgctn h3 {
+  font-size: 1.7em;
+  line-height: 1.2em;
+  margin: 15px 0;
+}
+
+.widgli p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+/* Section 2 */
+.sec2maindiv h2 {
+  font-size: 1.6rem;
+}
+
+.sec2maindiv p {
+  font-size: 0.8rem;
+  max-width: 450px;
+}
+
+.card1sec2 {
+  width: 160px;
+  padding: 12px;
+}
+
+.card1sec2 h4 {
+  font-size: 0.95rem;
+}
+
+.card1sec2 p {
+  font-size: 0.85rem;
+}
+
+/* Section 3 */
+.sec3maindiv h2 {
+  font-size: 1.8rem;
+}
+
+.secdiv1 h4 {
+  font-size: 1.1rem;
+}
+
+.sect3btmdiv {
+  width: 60%;
+}
+
+.sect3btmdiv p {
+  font-size: 0.9rem;
+}
+/* scetion 4 */
+.sec4card1, .sec4card2 {
+    width: 45%;
+  }
+
+  .sec4maindiv h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn a {
+    font-size: 1rem;
+  }
+/* secion 6 */
+
+.sec6maindiv {
+  padding: 40px 15px;
+}
+
+.divsec6 {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.sec6btn1, .sec6btn2 {
+  padding: 10px 16px;
+}
+
+.sec6divbgchild {
+  width: 60%;
+}
+
+.sec6divbg {
+  padding: 60px;
+}
+
+.sec6ctn h3 {
+  font-size: 1.6rem;
+}
+
+.sec6ctn p {
+  font-size: 0.95rem;
+}
+
+.btncutomize a {
+  width: 150px;
+  height: 30px;
+  font-size: 0.9rem;
+}
+/* Section 8 Responsiveness */
+.sec8maindiv {
+  padding: 40px 30px;
+}
+
+.sec8maindiv h2 {
+  font-size: 2em;
+}
+
+.sec8divcontainer {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.sec8divcard1 {
+  padding: 12px;
+}
+
+/* Section 9 Responsiveness */
+.sec9maindiv {
+  flex-direction: column;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.sec9right {
+  padding: 20px 0;
+  align-items: center;
+}
+
+.sec9right h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.sec9right p {
+  width: 100%;
+}
+
+.sec9light iframe {
+  width: 100%;
+  max-width: 600px;
+}
+  .faq-section {
+    padding: 40px 15px;
+  }
+
+  .faq-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-container {
+    padding: 0 10px;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
