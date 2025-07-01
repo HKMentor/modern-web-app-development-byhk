@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4 mdn web docs</title>
+    <!-- style file -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- screen size mmedia query different file -->
+
+    <link rel="stylesheet" href="./large.css" media="(max-width:1100px)">
+    <link rel="stylesheet" href="./medium.css" media="(max-width:1000px)">
+    <link rel="stylesheet" href="./small.css" media="(max-width:700px)">
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- top navbar -->
+        <header>
+            <div class="top-nav">
+                <p>Learn front-end development with high quality, interactive courses from <a
+                        href="https://scrimba.com/frontend-path-c0j?via=mdn">Scrimba</a>. Enroll now!</p>
+            </div>
+            <!-- Navbar -->
+            <nav>
+                <img src="./images/fulllogo.png" alt="logo" width="200px">
+                <ul>
+                    <li><a href="" class="lighGrey">References</a></li>
+                    <li><a href="">Learn</a></li>
+                    <li><a href="">Plus</a></li>
+                    <li><a href="">Curriculum <sup>NEW</sup></a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Tools</a></li>
+                </ul>
+                <div class="theme" style=" display:inline-block; margin-left: 80px;  ">
+
+                    <p><i class="fas fa-moon" style="color: gray; font-size:20px; "></i> Theme</p>
+                </div>
+                <div class="search_bar" style="position: relative; display: inline-block;">
+                    <input type="text" style="height: 25px; border-radius: 30px; width:90px; border:1px solid;">
+                    <i class="fas fa-search"
+                        style="color: gray; position: absolute; top: 50%; left: 70px; transform: translateY(-50%);"></i>
+                    <a href="https://accounts.firefox.com/oauth/?response_type=code&client_id=720bc80adfa6988d&state=4hu2A_gW3AOLle8jW2nKwg&redirect_uri=https%3A%2F%2Fdeveloper.mozilla.org%2Fusers%2Ffxa%2Flogin%2Fcallback%2F&scope=openid%2Bopenid%2Bprofile%2Bemail%2Bprofile%3Asubscriptions&access_type=offline&nonce=D0mPA6UGiORnFyfXYNn0dA"
+                        class="login">Log in</a>
+                    <button class="btn"><a href="">Sign up for free</a></button>
+                </div>
+                <!-- bottom nav -->
+
+                <div class="bootom-nav">
+                    <p>References <span> ></span> CSS</p>
+                    <p class="language">English (US)</p>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- left side -->
+        <div class="hero-div">
+            <div class="left-div">
+                <h3>In this article</h3>
+                <ul class="beginner">
+                    <li><a href="" id="Beginner">Beginner's tutorials</a></li>
+                    <li><a href="" id="Reference">Reference</a></li>
+                    <li><a href="" id="Cookbook">Cookbook</a></li>
+                    <li><a href="" id="Tools for CSS development">Tools for CSS development</a></li>
+                    <li><a href="" id="Meta bugs">Meta bugs</a></li>
+                    <li><a href="" id="See also">See also</a></li>
+                </ul>
+                <p id="CSS">CSS</p>
+                <h3>Beginner's tutorials</h3>
+                <p>Your first website: Styling the content</p>
+                <a href="javascript:void(0)" onclick="toggleDropdown(this)">
+                    <span class="arrow">▶</span> CSS styling basics
+                </a>
+                <ul class="dropdown" style="display: none;">
+                    <!-- dropdown items -->
+                    <li><a href="">What is CSS?</a></li>
+                    <li><a href="">CSS getting started</a></li>
+                    <li><a href="">Challenge: Biography page</a></li>
+                    <li><a href="">Basic selectors</a></li>
+                    <li><a href="">Attribute selectors</a></li>
+                    <li><a href="">Pseudo-classes and elements</a></li>
+                    <li><a href="">Combinators</a></li>
+                    <li><a href="">Box model</a></li>
+                    <li><a href="">Handling conflicts</a></li>
+                    <li><a href="">Values and units</a></li>
+                    <li><a href="">Sizing</a></li>
+                    <li><a href="">Backgrounds and borders</a></li>
+                    <li><a href="">Overflow</a></li>
+                    <li><a href="">Images, media, forms</a></li>
+                    <li><a href="">Styling tables</a></li>
+                    <li><a href="">Debugging CSS</a></li>
+                    <li><a href="">Challenge: Business card</a></li>
+                    <li><a href="">Challenge: Fancy letterhead</a></li>
+
+
+                </ul>
+                <a href="javascript:void(0)" onclick="toggleDropdown(this)">
+                    <span class="arrow">▶</span> CSS text styling
+                </a>
+                <ul class="dropdown" style="display: none;">
+                    <!-- dropdown items -->
+                    <li><a href="">Text and font fundamentals</a></li>
+                    <li><a href="">Styling lists</a></li>
+                    <li><a href="">Styling links</a></li>
+                    <li><a href="">Web fonts</a></li>
+                    <li><a href="">Challenge: Community school homepage</a></li>
+                </ul>
+
+                <a href="javascript:void(0)" onclick="toggleDropdown(this)">
+                    <span class="arrow">▶</span> CSS layout
+                </a>
+                <ul class="dropdown" style="display: none;">
+                    <!-- dropdown items -->
+                    <li><a href="">Introduction</a></li>
+                    <li><a href="">Floats</a></li>
+                    <li><a href="">Positioning</a></li>
+                    <li><a href="">Flexbox</a></li>
+                    <li><a href="">CSS grid layout</a></li>
+                    <li><a href="">Responsive design</a></li>
+                    <li><a href="">Media queries</a></li>
+                    <li><a href="">Challenge: Fundamental layout</a></li>
+
+                </ul>
+                <h3>CSS reference</h3>
+
+                <a href="javascript:void(0)" onclick="toggleDropdown(this)">
+                    <span class="arrow">▶</span> Modules
+                </a>
+                <ul class="dropdown" style="display: none;">
+                    <!-- dropdown items -->
+                    <li><a href="">CSS anchor positioning</a></li>
+                    <li><a href="">CSS animations</a></li>
+                    <li><a href="">CSS backgrounds and borders</a></li>
+                    <li><a href="">CSS basic user interface</a></li>
+                    <li><a href="">CSS box alignment</a></li>
+                    <li><a href="">CSS box model</a></li>
+                    <li><a href="">CSS box sizing</a></li>
+                    <li><a href="">CSS cascading and inheritance</a></li>
+                    <li><a href="">CSS color adjustment</a></li>
+                    <li><a href="">CSS colors</a></li>
+                    <li><a href="">CSS compositing and blending</a></li>
+                    <li><a href="">CSS conditional rules</a></li>
+                    <li><a href="">CSS containment</a></li>
+                    <li><a href="">CSS counter styles</a></li>
+
+                </ul>
+
+                <a href="javascript:void(0)" onclick="toggleDropdown(this)">
+                    <span class="arrow">▶</span> Properties
+                </a>
+                <ul class="dropdown" style="display: none;">
+                    <!-- dropdown items -->
+                    <li>▶ -moz-*
+                        <ul>
+                            <li><a href="">-moz-float-edgeNon-standard</a></li>
+                            <li><a href="">-moz-force-broken-image-iconNon-standardDeprecated</a></li>
+                            <li><a href="">-moz-image-region</a></li>
+                            <li><a href="">-moz-orientNon-standard</a></li>
+                            <li><a href="">-moz-user-focusNon-standardDeprecated</a></li>
+                            <li><a href="">-moz-user-inputNon-standardDeprecated</a></li>
+                        </ul>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" onclick="toggleDropdown(event)">
+                                <span id="arrow">▶</span> -webkit-*
+                            </a>
+                            <ul id="dropdown" style="display: none;">
+
+                                <!-- Add more list items as necessary -->
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" onclick="toggleDropdown(event)">
+                            <span id="arrow">▶</span> -webkit-*
+                        </a>
+                        <ul id="dropdown" style="display: none;">
+
+                            <!-- Add more list items as necessary -->
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">▶ -webkit-*</a></li>
+                    <li><a href="">Custom properties (--*): CSS variables</a></li>
+                    <li><a href="">accent-color</a></li>
+                    <li><a href="">▶ align-*</a></li>
+                    <li><a href="">alignment-baseline</a></li>
+                    <li><a href="">all</a></li>
+                    <li><a href="">anchor-nameExperimental</a></li>
+                    <li><a href="">▶ animation-*</a></li>
+                    <li><a href="">appearance</a></li>
+                    <li><a href="">aspect-ratio</a></li>
+                    <li><a href="">backface-visibility</a></li>
+                    <li><a href="">▶ background-*</a></li>
+                    <li><a href="">block-size</a></li>
+                    <li><a href="">▶ border-*</a></li>
+                    <li><a href="">bottom</a></li>
+                    <li><a href="">▶ box-*</a></li>
+                    <li><a href="">▶ break-*</a></li>
+                    <li><a href="">caption-side</a></li>
+                    <li><a href="">caret-color</a></li>
+                    <li><a href="">clear</a></li>
+                    <li><a href="">▶ clip-*</a></li>
+                    <li><a href="">▶ color-*</a></li>
+                    <li><a href="">columns</a></li>
+                    <li><a href="">▶ contain-*-*</a></li>
+                    <li><a href="">▶ container-*</a></li>
+                    <li><a href="">▶ content</a></li>
+                    <li><a href="">content-visibility</a></li>
+                    <li><a href="">▶ counter-**</a></li>
+                    <li><a href="">cursor</a></li>
+                    <li><a href="">cx</a></li>
+                    <li><a href="">cy</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">direction</a></li>
+                    <li><a href="">display</a></li>
+                    <li><a href="">dominant-baseline</a></li>
+                    <li><a href="">empty-cells</a></li>
+                    <li><a href="">field-sizingExperimental</a></li>
+                    <li><a href="">▶ flex-*</a></li>
+                    <li><a href="">float</a></li>
+                    <li><a href="">flood-color</a></li>
+                    <li><a href="">flood-opacity</a></li>
+                    <li><a href="">▶ font-*</a></li>
+                    <li><a href="">forced-color-adjust</a></li>
+                    <li><a href="">gap</a></li>
+                    <li><a href="">▶ grid-*</a></li>
+                    <li><a href="">hanging-punctuation</a></li>
+                    <li><a href="">height</a></li>
+                    <li><a href="">hyphenate-character</a></li>
+                    <li><a href="">hyphenate-limit-chars</a></li>
+                    <li><a href="">▶ image-*</a></li>
+                    <li><a href="">initial-letter</a></li>
+                    <li><a href="">inline-size</a></li>
+                    <li><a href="">▶ inset-*</a></li>
+                    <li><a href="">interpolate-sizeExperimental</a></li>
+                    <li><a href="">isolation</a></li>
+                    <li><a href="">▶ justify-*</a></li>
+                    <li><a href="">left</a></li>
+                    <li><a href="">letter-spacing</a></li>
+                    <li><a href="">lighting-color</a></li>
+                    <li><a href="">▶ line-*</a></li>
+                    <li><a href="">▶ list-*</a></li>
+                    <li><a href="">▶ margin-*</a></li>
+                    <li><a href="">▶ marker-*</a></li>
+                    <li><a href="">▶ mask-*</a></li>
+                    <li><a href="">▶ math-*</a></li>
+                    <li><a href="">▶ max-*</a></li>
+                    <li><a href="">▶ min-*</a></li>
+                    <li><a href="">mix-blend-mode</a></li>
+                    <li><a href="">object-fit</a></li>
+                    <li><a href="">object-position</a></li>
+                    <li><a href="">▶ offset-*</a></li>
+                    <li><a href="">opacity</a></li>
+                    <li><a href="">orphans</a></li>
+                    <li><a href="">▶ outline-*</a></li>
+                    <li><a href="">▶ overflow-*</a></li>
+                    <li><a href="">overlayExperimental</a></li>
+                    <li><a href="">▶ overscroll-*</a></li>
+                    <li><a href="">▶ padding-*</a></li>
+                    <li><a href="">▶ page-*</a></li>
+                    <li><a href="">perspective</a></li>
+                    <li><a href="">paint-order</a></li>
+                    <li><a href="">perspective-origin</a></li>
+                    <li><a href="">▶ place-*</a></li>
+                    <li><a href="">pointer-events</a></li>
+                    <li><a href="">▶ position-*</a></li>
+                    <li><a href="">print-color-adjust</a></li>
+                    <li><a href="">quotes</a></li>
+                    <li><a href="">r</a></li>
+                    <li><a href="">resizer</a></li>
+                    <li><a href="">right</a></li>
+                    <li><a href="">rotate</a></li>
+                    <li><a href="">row-gap</a></li>
+                    <li><a href="">ruby-align</a></li>
+                    <li><a href="">ruby-position</a></li>
+                    <li><a href="">rx</a></li>
+                    <li><a href="">ry</a></li>
+                    <li><a href="">scale</a></li>
+                    <li><a href="">▶ scroll-*</a></li>
+                    <li><a href="">▶ scrollbar-*</a></li>
+                    <li><a href="">▶ shape-*</a></li>
+                    <li><a href="">speak-asExperimental</a></li>
+                    <li><a href="">stop-color</a></li>
+                    <li><a href="">stop-opacity</a></li>
+                    <li><a href="">▶ stroke-*</a></li>
+                    <li><a href="">tab-size</a></li>
+                    <li><a href="">table-layout</a></li>
+                    <li><a href="">▶ text-*</a></li>
+                    <li><a href="">timeline-scopeExperimental</a></li>
+                    <li><a href="">top</a></li>
+                    <li><a href="">touch-action</a></li>
+                    <li><a href="">▶ transform-*</a></li>
+                    <li><a href="">▶ transition-*</a></li>
+                    <li><a href="">translate</a></li>
+                    <li><a href="">unicode-bidi</a></li>
+                    <li><a href="">user-modifyNon-standardDeprecated</a></li>
+                    <li><a href="">user-select</a></li>
+                    <li><a href="">vector-effect</a></li>
+                    <li><a href="">vertical-align</a></li>
+                    <li><a href="">▶ view-*</a></li>
+                    <li><a href="">visibility</a></li>
+                    <li><a href="">white-space</a></li>
+                    <li><a href="">white-space-collapse</a></li>
+                    <li><a href="">widows</a></li>
+                    <li><a href="">width</a></li>
+                    <li><a href="">will-change</a></li>
+                    <li><a href="">word-break</a></li>
+                    <li><a href="">word-spacing</a></li>
+                    <li><a href="">writing-mode</a></li>
+                    <li><a href="">x</a></li>
+                    <li><a href="">y</a></li>
+                    <li><a href="">z-index</a></li>
+                    <li><a href="">zoom</a></li>
+                    <li><a href="">▶ view-*</a></li>
+                    <li><a href="">▶ Combinators</a></li>
+                    <li><a href="">▶ Pseudo-classes</a></li>
+                    <li><a href="">▶ :-moz-*</a></li>
+                    <li><a href="">:active</a></li>
+                    <li><a href="">:any-link</a></li>
+                    <li><a href="">:autofill</a></li>
+                    <li><a href="">:blankExperimental</a></li>
+                    <li><a href="">:buffering</a></li>
+                    <li><a href="">:checked</a></li>
+                    <li><a href="">::currentExperimental</a></li>
+                    <li><a href="">:default</a></li>
+                    <li><a href="">:definedk</a></li>
+                    <li><a href="">:dir()</a></li>
+                    <li><a href="">:disabled</a></li>
+                    <li><a href="">:empty</a></li>
+                    <li><a href="">:enabled</a></li>
+                    <li><a href="">▶ :first-*</a></li>
+                    <li><a href="">▶:focus-*</a></li>
+                    <li><a href="">:fullscreen</a></li>
+                    <li><a href="">:future</a></li>
+                    <li><a href="">:has-slotted</a></li>
+                    <li><a href="">:has()</a></li>
+                    <li><a href="">:host</a></li>
+                    <li><a href="">:host-context()</a></li>
+                    <li><a href="">:host()</a></li>
+                    <li><a href="">:hover</a></li>
+                    <li><a href="">:in-range</a></li>
+                    <li><a href="">:indeterminate</a></li>
+                    <li><a href="">:invalid</a></li>
+                    <li><a href="">:is()</a></li>
+                    <li><a href="">:lang()</a></li>
+                    <li><a href="">:last-child</a></li>
+                    <li><a href="">:last-of-type</a></li>
+                    <li><a href="">:left</a></li>
+                    <li><a href="">:link</a></li>
+                    <li><a href="">:local-linkExperimental</a></li>
+                    <li><a href="">:modal</a></li>
+                    <li><a href="">:muted</a></li>
+                    <li><a href="">:not()</a></li>
+                    <li><a href="">▶ :nth-*</a></li>
+                    <li><a href="">:only-child</a></li>
+                    <li><a href="">:only-of-type</a></li>
+                    <li><a href="">:open</a></li>
+                    <li><a href="">:optional</a></li>
+                    <li><a href="">:out-of-range</a></li>
+                    <li><a href="">:past</a></li>
+                    <li><a href="">:paused</a></li>
+                    <li><a href="">:picture-in-picture</a></li>
+                    <li><a href="">:placeholder-shown</a></li>
+                    <li><a href="">:playing</a></li>
+                    <li><a href="">:popover-open</a></li>
+                    <li><a href="">:read-only</a></li>
+                    <li><a href="">:read-write</a></li>
+                    <li><a href="">:required</a></li>
+                    <li><a href="">:right</a></li>
+                    <li><a href="">:root</a></li>
+                    <li><a href="">:scope</a></li>
+                    <li><a href="">:seeking</a></li>
+                    <li><a href="">:stalled</a></li>
+                    <li><a href="">:state()</a></li>
+                    <li><a href="">▶ :target-*</a></li>
+                    <li><a href="">:user-invalid</a></li>
+                    <li><a href="">:user-valid</a></li>
+                    <li><a href="">:valid</a></li>
+                    <li><a href="">:visited</a></li>
+                    <li><a href="">:volume-locked</a></li>
+                    <li><a href="">:where()</a></li>
+                    <li><a href="">▶ Pseudo-elements</a></li>
+                    <li><a href="">▶ ::-moz-*</a></li>
+                    <li><a href="">▶ ::-webkit-*</a></li>
+                    <li><a href="">::after</a></li>
+                    <li><a href="">::backdrop</a></li>
+                    <li><a href="">::before</a></li>
+                    <li><a href="">::checkmarkExperimental</a></li>
+                    <li><a href="">::columnExperimental</a></li>
+                    <li><a href="">:cue</a></li>
+                    <li><a href="">::details-content</a></li>
+                    <li><a href="">::file-selector-button</a></li>
+                    <li><a href="">::first-letter</a></li>
+                    <li><a href="">::first-line</a></li>
+                    <li><a href="">::grammar-error</a></li>
+                    <li><a href="">::highlight()</a></li>
+                    <li><a href="">Pagination</a></li>
+                    <li><a href="">Carde</a></li>
+                    <li><a href="">:cue</a></li>
+                    <li><a href="">:cue</a></li>
+                </ul>
+                <h3>Tools</h3>
+                <ul>
+                    <li><a href="">Color picker tool</a></li>
+                    <li><a href="">Box-shadow generator</a></li>
+                    <li><a href="">Border-image generator</a></li>
+                    <li><a href="">Border-radius generator</a></li>
+                </ul>
+
+            </div>
+
+            <!-- center -->
+            <section>
+                <div class="center-div">
+                    <h1>CSS: Cascading Style Sheets</h1>
+                    <br>
+                    <p>Cascading Style Sheets (CSS) is a <a href="">stylesheet </a>language used to describe the
+                        presentation of a document written in <a href="">HTML</a> or <a href="">XML</a>
+                        (including XML
+                        dialects such as <a href="">SVG</a>, <a href="">MatahML</a> or <a href="">XHTML</a> ).
+                        CSS
+                        describes how elements should be rendered on screen, on paper, in speech, or on other
+                        media.</p>
+                    <br>
+                    <p>CSS is among the core languages of the open web and is standardized across Web browsers
+                        according
+                        to <a href="">W3C specifications</a>. Previously, the development of various parts of
+                        CSS
+                        specification was done synchronously, which allowed the versioning of the latest
+                        recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never
+                        be a
+                        CSS3 or a CSS4; rather, everything is now just "CSS" with individual CSS modules having
+                        version
+                        numbers.</p>
+                    <br>
+                    <p>After CSS 2.1, the scope of the specification increased significantly and the progress on
+                        different CSS modules started to differ so much, that it became more effective to <a
+                            href="">develop and release recommendations separately per module</a>. Instead of
+                        versioning
+                        the CSS specification, W3C now periodically takes a snapshot of <a href=""> the latest
+                            stable
+                            state of the CSS specification</a> and individual modules progress. CSS modules now
+                        have
+                        version numbers, or levels, such as <a href="">CSS Color Module Level 5</a>.</p>
+                    <br>
+                    <h2>Beginner's tutorials<h2>
+                            <br>
+                            <h4><a href="">Your first website: Styling the content</a></h4>
+                            <p>This article provides a brief tour of what CSS is and how to use it, aimed at
+                                people who
+                                are completely new to web development.</p>
+                            <br>
+                            <h4> <a href="">CSS styling basics</a></h4>
+                            <p>Our <a href="">Learn web development</a> section's CSS basics module teaches CSS
+                                fundamentals from the ground up.</p>
+
+                            <h4> <a href="">
+                                    CSS text styling
+                                </a></h4>
+                            <p>
+                                Here we look at fundamentals including setting font, boldness, italics, line and
+                                letter
+                                spacing, drop shadows, and other text features. We round off the module by
+                                looking at
+                                applying custom fonts to your page, and styling lists and links.</p>
+                            <br>
+                            <h4> <a href="">
+                                    CSS layout
+                                </a></h4>
+                            <p>
+                                Now it's time to look at how to correctly lay out your boxes in relation to one
+                                another,
+                                and the browser viewport. This module looks at floats, positioning, other modern
+                                layout
+                                tools, and building responsive designs that will adapt to different devices,
+                                screen
+                                sizes, and resolutions.</p> <br>
+                            <h2>References<h2>
+
+                                    <p>The <a href="">CSS reference</a> is an exhaustive reference for seasoned
+                                        Web
+                                        developers, describing every property and concept of CSS, including:</p>
+                                    <ul class="ref-list">
+                                        <li>The <a href="">syntax and forms of the language</a></li>
+                                        <li><a href="">Specificity, inheritance,</a>and <a href="">the
+                                                cascade</a></li>
+                                        <li><a href="">and </a> including
+                                            <a href="">pseudo-elements, </a><a href="">nesting, scoping </a> and
+                                            <a href="">shadow parts</a>
+                                        </li>
+                                        <li><a href="">CSS at-rules,</a> including <a href="">media</a> and <a
+                                                href="">container </a> queries</li>
+                                        <li><a href="">CSS values and units </a> module, including <a href="">numeric
+                                                data types, textual data types</a> and <a href=""> functional
+                                                notations</a></li>
+                                        <li><a href="">Box model </a> and <a href="">margin collapse</a></li>
+                                        <li>The <a href="">containing block</a></li>
+                                        <li><a href="">Stacking </a> and <a href=""> block-formatting </a>
+                                            contexts</li>
+                                        <li><a href="">Initial, computed, used, </a> and <a href="">actual</a>
+                                            values
+                                        </li>
+                                        <li><a href="">CSS shorthand properties</a></li>
+                                        <li><a href="">CSS flexible box, </a> <a href=""> multi-column </a> and
+                                            <a href="">grid </a> layout
+                                        </li>
+                                        <li><a href="">Animation, transitions, </a> and <a href="">transforms</a></li>
+                                    </ul>
+
+                                    <h2>Cookbook<h2>
+
+                                            <p>The <a href="">CSS layout cookbook </a> aims to bring together
+                                                recipes
+                                                for common layout patterns, things you might need to implement
+                                                in your
+                                                sites. In addition to providing code you can use as a starting
+                                                point in
+                                                your projects, these recipes highlight the different ways layout
+                                                specifications can be used and the choices you can make as a
+                                                developer.
+                                            </p>
+                                            <h2>Tools for CSS development</h2>
+                                            <ul class="tools">
+                                                <li>You can use the <a href="">W3C CSS Validation Service</a> to
+                                                    check
+                                                    if your CSS is valid. This is an invaluable debugging tool.
+                                                </li>
+                                                <li><a href="">Firefox Developer Tools </a> lets you view and
+                                                    edit a
+                                                    page's live CSS via the <a href="">Inspector</a> and <a
+                                                        href="">Style Editor</a> tools.</li>
+                                                <li>The <a href="">Web Developer extension</a> for Firefox lets
+                                                    you
+                                                    track and edit live CSS on watched sites.</li>
+
+                                            </ul>
+                                            <h2>Meta bugs</h2>
+                                            <ul class="ref-list">
+                                                <li>Firefox: <a href="">Firefox bug 1323667</a></li>
+                                            </ul>
+                                            <h2>See also</h2>
+                                            <ul class="ref-list">
+                                                <li>Web languages to which CSS is often applied: <a href="">HTML, </a><a
+                                                        href="">SVG, </a><a href="">MathML,</a> <a href="">XHTML,</a>
+                                                    and <a href="">XML</a>.</li>
+                                                <li><a href="">Stack Overflow questions about CSS</a></li>
+                                            </ul>
+                                            <div class="boxdiv">
+                                                <h2>Help improve MDN</h2>
+                                                <p>Was this page helpful to you?</p>
+                                                <button><i></i> Yes</button>
+                                                <button><i></i>No</button>
+                                                <p><a href="">Learn how to contribute.</a></p>
+                                                <p>This page was last modified on Mar 22, 2025 by <a href="">MDN
+                                                        contributors.
+
+                                                        View this page on GitHub</a> • <a href="">Report a problem
+                                                        with this
+                                                        content</a></p>
+                                            </div>
+
+
+                </div>
+            </section>
+
+
+
+
+        </div>
+        <!-- bootom footer -->
+        <div class="botomfooter">
+            <img src="./images/botmfooter.PNG" alt="">
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer-div">
+                <div class="footerlogo">
+                    <h1>mdm</h1>
+                    <p>YOur blueprint for a better internet.</p>
+                    <div class="icon">
+                        <ul>
+                            <li><a href="https://github.com/HKMentor" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/hooria-fatima-54753927b/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/hooria_codehub/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61553411646244&ref=ig_profile_ac"
+                                    target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerlink1">
+                    <h4 class="dev">MDN</h4>
+
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                        <li>Advertise with us</li>
+                    </ul>
+                </div>
+                <div class="footerlink2">
+                    <h4 class="dev">Support</h4>
+
+                    <ul>
+                        <li>Product help</li>
+                        <li>Report an issue</li>
+
+                    </ul>
+                </div>
+                <div class="footerlink3">
+                    <h4 class="dev">Our Communities</h4>
+
+                    <ul>
+                        <li>MDN Community</li>
+                        <li>MDN Forum</li>
+                        <li>MDN Chat</li>
+
+                    </ul>
+                </div>
+                <div class="footerlink4">
+                    <h4 class="dev">Developer</h4>
+
+                    <ul>
+                        <li>Web Technologies</li>
+                        <li>Learn Web Development</li>
+                        <li>MDN Plus</li>
+                        <li>Hacks Blog</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr class="line">
+            <div class="logo2">
+                <div class="uli">
+                    <ul class="foterlinkk">
+                        <li><a href="">Website Privacy Notice</a></li>
+                        <li><a href="">Cookies</a></li>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Community Participation Guidelines</a></li>
+                    </ul>
+                </div>
+                <img src="./images/moxillalogo.png" alt="" width="30%">
+
+                <p>Visit <a href="">Mozilla Corporation’s</a> not-for-profit parent, the <a href="">Mozilla
+                        Foundation.</a>
+                    Portions of this content are ©1998–2025 by individual mozilla.org contributors. Content available
+                    under <a href="">a Creative Commons license.</a></p>
+
+
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        function toggleDropdown(anchor) {
+            const dropdown = anchor.nextElementSibling;
+            const arrow = anchor.querySelector('.arrow');
+
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+                arrow.textContent = "▼";
+            } else {
+                dropdown.style.display = "none";
+                arrow.textContent = "▶";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
