@@ -23,11 +23,13 @@
       display: flex;
       align-items: center; /* Center align vertically */
       gap: 30px;
-      background-color: #868585ea;
+      background-color: #b5b2b2ea;
       height: 70px;
-      padding: 0 50px;
+      padding:20px 50px;
       position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       width: 100%;
       z-index: 1000;
     }
@@ -52,19 +54,18 @@
     nav ul {
       display: flex;
       gap: 66px;
-      font-size: 14px;
+      font-size: 18px;
       list-style: none;
       text-transform: capitalize;
       margin-left: 100px;
     }
 
     nav ul li a {
-      color: #f7f8f9;
-      font-weight: bold;
+      color: #131313;
+      /* font-weight: bold; */
       text-decoration: none;
       transition: all 0.3s ease-in-out;
-      letter-spacing: 2px;
-      font-family: sans-serif;
+      /* letter-spacing: 2px; */
     }
 
     nav ul li a:hover {
@@ -78,6 +79,7 @@
 
     .btnn {
       display: flex;
+      
       gap: 20px;
       margin-left: 90px;
     }
@@ -1596,16 +1598,17 @@ line-height: 1.7em;
   justify-content: center;
   flex-direction: column;
   padding: 70px;
-  line-height: 2em;
+  line-height: 1.3em;
 }
 .sec14maindiv h2{
  text-align: center;
- font-size: 1.8em;
+ font-size: 1.2em;
 }
 .sec14maindiv p{
-  width: 650px;
+  width: 200px;
+  font-size: 10px;
   text-align: center;
-  margin-bottom: -29px;
+  margin-bottom: -10px;
 }
 
 /* footer */

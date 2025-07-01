@@ -1,0 +1,52 @@
+/* small.css */
+body {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.container, .row, .col {
+  width: 100% !important;
+  padding: 0 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-heading h2 {
+  font-size: 24px;
+}
+
+.section-heading p {
+  font-size: 14px;
+}
+
+nav ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact-wrap {
+  padding: 30px 15px;
+}
+
+.event-details h3 {
+  font-size: 18px;
+}
+
+.testimonial-text {
+  font-size: 14px;
+}
+
+
+.bgnav2{
+    display: none;
+}
+
+/* nav */
